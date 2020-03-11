@@ -30,4 +30,22 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  controllers:
+    deliveries:
+      create:
+        success: "Delivery was successfully created."
+      destroy:
+        success: "Delivery was successfully destroyed."
+      update:
+        success: "Delivery was successfully updated."
+  layouts:
+    application:
+      title: "Delivery Aegis"
+
+    footer:
+      accessibility: "Accessibility"
+      campus_dining: "Campus Dining"
+      copyright: "Copyright"
+      fax: "Fax"
+      phone: "Phone"
+      university: "University of Notre Dame"

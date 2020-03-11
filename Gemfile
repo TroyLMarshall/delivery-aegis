@@ -14,6 +14,9 @@ gem "pg", ">= 0.18", "< 2.0"
 # Use Puma as the app server
 gem "puma", "~> 4.1"
 
+# Use Unicorn as the app server
+# gem "unicorn", "~> 5.5.3"
+
 # Use SCSS for stylesheets
 gem "sass-rails", ">= 6"
 
@@ -38,12 +41,23 @@ gem "jbuilder", "~> 2.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.2", require: false
 
+# Use dotenv for accessing environment variables. Read more: https://github.com/bkeepers/dotenv
+gem "dotenv-rails", "~> 2.7.5"
+
+# Use Okta for AuthN. Readmore: https://rubygems.org/gems/omniauth-oktaoauth
+gem "omniauth-oktaoauth", "~> 0.1.6"
+
+# Use Twitter Bootstrap for the responsive framework. Read more: https://github.com/twbs/bootstrap-rubygem
+gem "autoprefixer-rails", "~> 9.7.4"
+gem "bootstrap", "~> 4.4.1"
+gem "jquery-rails", "~> 4.3.5"
+
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # Use RSpec for testing. Read more: https:/relishapp.com/rspec/rspec-rails/docs
-  gem "rspec-rails", "~> 3.9.0"
+  gem "rspec-rails", "4.0.0.beta4"
 
   # Use factory_bot_rails as a fixture replacement. Read more: https://github.com/thoughtbot/factory_bot_rails
   gem "factory_bot_rails", "~> 5.1.1"

@@ -95,6 +95,7 @@ end
 
 guard :rubocop, cli: %w[--display-cop-names --format html -o ./rubocop/results.html] do
   watch(%r{.+\.rb$})
+  watch(%r{.+\.jbuilder})
   watch(%r{(?:.+/)?\.rubocop(?:_todo)?\.yml$}) { |m| File.dirname(m[0]) }
 end
 

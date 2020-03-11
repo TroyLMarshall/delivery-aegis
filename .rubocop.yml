@@ -16,7 +16,7 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Exclude:
     - "Guardfile"
-    
+
 Metrics/CyclomaticComplexity:
   Exclude:
     - "bin/**/*"
@@ -33,9 +33,16 @@ Style/BlockComments:
   Exclude:
     - "spec/spec_helper.rb"
 
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+  
 Style/ExpandPathArguments:
   Exclude:
     - "bin/**/*"
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - "db/schema.rb"
 
 Style/HashEachMethods:
   Enabled: true
@@ -49,6 +56,10 @@ Style/HashTransformValues:
 Style/IfUnlessModifier:
   Exclude:
     - "bin/**/*"
+
+Style/NumericLiterals:
+  Exclude:
+    - "db/schema.rb"
 
 Style/PerlBackrefs:
   Exclude:

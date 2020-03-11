@@ -1,0 +1,110 @@
+a {
+  color: #007faa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #007faa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007faa;
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid #dadada;
+  padding_top: 1rem;
+}
+
+section {
+  .heading {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+#brandbar {
+  overflow: hidden;
+  border-bottom: 1px solid #001227;
+  background-color: #0e2240;
+  color: white;
+
+  a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    height: 50px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+}
+
+#titlebar {
+  background: #dcb439 url(texture-gold.png) 0 0 repeat;
+  padding: 1rem 0;
+}
+
+.dept-nd a {
+  background-position: left 0;
+  background-image: url("https://static.nd.edu/images/brandbar/dept-nd-white.png")
+}
+
+.email {
+  padding-left: 1rem;
+}
+
+.fax {
+  padding-left: 1rem;
+}
+
+.nd-mark {
+  width: 225px;
+  height: 52px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .nd-mark {
+    float: right;
+  }
+}
+
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
